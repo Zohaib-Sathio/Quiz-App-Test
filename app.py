@@ -64,7 +64,8 @@ if st.button("Next Question"):
     st.session_state.current_index = random.randint(0, len(df) - 1)
     st.session_state.feedback = None
     st.session_state.last_answer = None
-    st.experimental_rerun()
+    st.rerun()
+
 
 # Sidebar stats
 st.sidebar.markdown("## 📊 Your Stats")
